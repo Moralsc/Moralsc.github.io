@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Remedios Saludables</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '769484588857559');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=769484588857559&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <meta name="theme-color" content="#0ff1ce">
+</head>
+<body class="futuristic-bg">
+  <!-- HEADER -->
+  <!-- HEADER: Encabezado principal con logo, idioma y botón de compra. Puedes cambiar el logo, los textos y los idiomas aquí. -->
+  <header class="header organic-bg">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-box organic-glow" aria-hidden="true"><span class="icon-leaf">🌱</span></div>
+        <div>
+          <div class="logo-text-main organic-font" id="logo-main">Cuida tu salud</div>
+          <div class="logo-text-sub" id="logo-sub">Con Remedios Saludables</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <nav class="lang-switcher" role="tablist" aria-label="Selector de idioma">
+          <button id="btn-es" class="lang-btn active" role="tab">Español</button>
+          <button id="btn-en" class="lang-btn" role="tab">English</button>
+          <button id="btn-pt" class="lang-btn" role="tab">Português</button>
+        </nav>
+        <a id="buy-link" href="https://tupago.com/es" target="_blank" rel="noopener noreferrer">
+          <button class="cta-btn organic-btn" id="buy-btn"><span class="icon-basket">🧺</span> Comprar Ahora</button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <!-- HERO: Sección principal de bienvenida. Cambia el título, subtítulo o imagen para personalizar el mensaje inicial. -->
+  <section class="hero organic-hero" aria-labelledby="hero-title" style="position:relative; z-index:1; background: linear-gradient(to bottom, rgba(205, 253, 253, 0.116) 0%, rgba(186, 242, 252, 0.336) 100%), url('tea.jpeg') center center / cover no-repeat;">
+    <div class="container hero-content" style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:60vh; padding:3rem 1rem; width:1342px; height:728.56px; max-width:100%;">
+      <button class="hero-offer-btn organic-glow" id="offer" aria-hidden="true" style="font-size:1.3rem; padding:0.8em 2em; margin-bottom:1.5rem; border-radius:2em; letter-spacing:1px;">OFERTA</button>
+      <h1 class="hero-title organic-font organic-gradient" id="title" style="font-size:clamp(2.5rem,7vw,4.5rem); font-weight:800; text-align:center; margin-bottom:1.2rem; line-height:1.1;">Más de 90 recetas de remedios naturales</h1>
+      <p class="hero-subtitle" id="subtitle" style="font-size:clamp(1.2rem,3vw,2rem); max-width:700px; text-align:center; margin-bottom:2.5rem; color:#222;border-radius:1em; padding:1em 2em; box-shadow:0 4px 24px 0 rgba(0,0,0,0.06);">La guía rápida y efectiva para transformar tu cuerpo y tu salud. Sin dietas extremas y con resultados reales.</p>
+      <div class="hero-bg-image" style="position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none;">
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <!-- BENEFICIOS: Muestra ventajas o razones para elegir tu producto. Puedes editar los íconos, títulos y descripciones de cada beneficio. -->
+  <section class="benefits-section organic-bg" aria-labelledby="benefits-title">
+    <div class="container">
+      <h2 class="benefits-title organic-font organic-gradient" id="benefits-title">¿Por qué funciona?</h2>
+      <div class="benefits-grid">
+        <article class="benefit-card organic-card">
+          <div class="benefit-icon organic-glow"><span class="icon-fire">🍃</span></div>
+          <h3 class="benefit-title" id="b1-title">Pérdida Rápida</h3>
+          <p class="benefit-desc" id="b1-desc">Métodos probados para quemar grasa desde la primera semana</p>
+        </article>
+        <article class="benefit-card organic-card">
+          <div class="benefit-icon organic-glow"><span class="icon-salad">🥗</span></div>
+          <h3 class="benefit-title" id="b2-title">Estrategias de alimentación</h3>
+          <p class="benefit-desc" id="b2-desc">Recetas simples y deliciosas...</p>
+        </article>
+        <article class="benefit-card organic-card">
+          <div class="benefit-icon organic-glow"><span class="icon-bolt">🌞</span></div>
+          <h3 class="benefit-title" id="b3-title">Sin Complicaciones</h3>
+          <p class="benefit-desc" id="b3-desc">Instrucciones claras, fáciles de seguir...</p>
+        </article>
+        <article class="benefit-card organic-card">
+          <div class="benefit-icon organic-glow"><span class="icon-heart">💚</span></div>
+          <h3 class="benefit-title" id="b4-title">100% Saludable</h3>
+          <p class="benefit-desc" id="b4-desc">Sin pastillas, sin dietas extremas...</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTAS -->
+  <!-- OFERTAS: Tarjetas de productos o servicios destacados. Modifica las imágenes, precios, títulos y enlaces según tus ofertas. -->
+  <section class="offers-section organic-bg" aria-labelledby="offers-heading">
+    <div class="container offers-container">
+      <div>
+        <div class="offers-header">
+          <h2 id="offers-heading" class="offers-title organic-font organic-gradient" style="margin:0;">Ofertas Especiales</h2>
+        </div>
+        <div class="offer-card organic-card">
+          <div id="shake-thumb" class="offer-thumb organic-glow" style="background-image:url('mornig.jpeg');"></div>
+          <div class="offer-body">
+            <h3 class="offer-title" id="shakes-title">Rutina Natural de Mañana y Noche</h3>
+            <p class="offer-desc" id="shakes-desc">Los remedios funcionan mejor cuando...</p>
+            <div class="offer-cta">
+              <div class="price-tag organic-glow" id="shakes-price">R$ 35,00</div>
+            </div>
+          </div>
+        </div>
+        <div style="height:14px"></div>
+        <div class="offer-card organic-card">
+          <div class="offer-thumb organic-glow" style="background-image:url('dosf.jpeg');"></div>
+          <div class="offer-body">
+            <h3 class="offer-title" id="diets-title">Dosificador Natural</h3>
+            <p class="offer-desc" id="diets-desc">Usar remedios naturales sin una dosificación clara...</p>
+            <div class="offer-cta">
+              <div class="price-tag organic-glow" id="diets-price">$ 19.439,00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="offers-visual" style="max-width:600px; width:600px;">
+        <img src="taketeam.jpeg" style="font-size: 100%; font-weight: 100%;" alt="Healthy meals" class="offers-image organic-img-glow">
+      </aside>
+    </div>
+  </section>
+
+  <!-- DIETAS -->
+  <!-- DIETAS: Ejemplo de planes o categorías. Cambia los nombres, imágenes y descripciones para mostrar tus propios planes saludables. -->
+  <section class="diets-section organic-bg" aria-labelledby="diets-heading">
+    <div class="container">
+      <h2 id="diets-heading" class="section-title organic-font organic-gradient">Dietas Saludables</h2>
+      <div class="diets-grid" id="diets-grid">
+        <article class="diet-card organic-card">
+          <img class="diet-thumb organic-img-glow" src="fondo2.png" alt="Plan equilibrado">
+          <div class="diet-body">
+            <div class="diet-title" id="diet1title">Plan Equilibrado</div>
+            <div class="diet-desc" id="diet1desc">Combinaciones balanceadas...</div>
+          </div>
+        </article>
+        <article class="diet-card organic-card">
+          <img class="diet-thumb organic-img-glow" src="fondo2.png" alt="Low carb">
+          <div class="diet-body">
+            <div class="diet-title" id="diet2title">Bajo en Carbohidratos</div>
+            <div class="diet-desc" id="diet2desc">Opciones bajas en carbohidratos...</div>
+          </div>
+        </article>
+        <article class="diet-card organic-card">
+          <img class="diet-thumb organic-img-glow" src="fondo2.png" alt="Veggie plan">
+          <div class="diet-body">
+            <div class="diet-title" id="diet3title">Vegetariano Saludable</div>
+            <div class="diet-desc" id="diet3desc">Recetas vegetales ricas en nutrientes...</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <!-- FAQ: Preguntas frecuentes. Edita las preguntas y respuestas para resolver dudas comunes de tus usuarios. -->
+  <section class="faq-section organic-bg" aria-labelledby="faq-heading">
+    <div class="container faq-container">
+      <h2 id="faq-heading" class="section-title organic-font organic-gradient">Preguntas Frecuentes</h2>
+      <div class="faq-item organic-card">
+        <div class="faq-q">
+          <span id="faq-q-0"></span>
+        </div>
+        <div class="faq-a" id="faq-a-0">
+          <!-- respuesta -->
+           </div>
+      </div>
+      <div class="faq-item organic-card">
+  <div class="faq-q">
+    <span id="faq-q-1"></span>
+  </div>
+  <div class="faq-a" id="faq-a-1">
+    <!-- respuesta -->
+  </div>
+</div>
+      <div class="faq-item organic-card">
+  <div class="faq-q">
+    <span id="faq-q-2"></span>
+  </div>
+  <div class="faq-a" id="faq-a-2">
+    <!-- respuesta -->
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- SCRIPT: Lógica para traducción de textos y funcionamiento de los botones de idioma y FAQ. Puedes modificar los textos en el objeto fallbackTranslations o agregar más idiomas. -->
+  <script>
+    // Carga traducciones desde translations.json con fallback inline
+    let translations = null;
+
+    const fallbackTranslations = {
+      "es": {
+    "logoMain": "Cuida tu Salud",
+    "logoSub": "Con Remedios Saludables",
+    "buyNow": "Comprar Ahora",
+    "offer": "¡OFERTA POR TIEMPO LIMITADO!",
+    "title": "Más de 90 recetas de remedios naturales",
+    "subtitle": "La guía rápida y efectiva para transformar tu cuerpo y tu salud. Sin dietas extremas y con resultados reales.",
+    "benefitsTitle": "¿Por qué funciona?",
+    "b1t": "Pérdida Rápida",
+    "b1d": "Métodos probados para quemar grasa desde la primera semana",
+    "b2t": "Estrategias de alimentación",
+    "b2d": "Recetas simples y deliciosas que aceleran tu metabolismo",
+    "b3t": "Sin Complicaciones",
+    "b3d": "Instrucciones claras, fáciles de seguir, sin ingredientes raros",
+    "b4t": "100% Saludable",
+    "b4d": "Sin pastillas, sin dietas extremas. Solo resultados reales",
+    "shakesTitle": "Rutina Natural de Mañana y Noche",
+    "shakesDesc": "Los remedios funcionan mejor cuando el cuerpo está en equilibrio. La Rutina Natural de Mañana y Noche te muestra cómo preparar tu organismo cada día para que los remedios naturales realmente den resultados.",
+    "shakesPrice": "$23.325,00",
+    "shakesCTA": "Comprar Batidos",
+    "dietsTitle": "Dosificador Natural",
+    "dietsDesc": "Usar remedios naturales sin una dosificación clara es uno de los errores más comunes. Este dosificador natural te indica cuánto tomar y cuándo para maximizar resultados.",
+    "dietsPrice": "$19.439,00",
+    "dietsCTA": "Ver Planes",
+    "offersHeading": "Ofertas Especiales",
+    "faqHeading": "Preguntas Frecuentes",
+    "dietsheading": "Dietas Saludables",
+    "diet1title": "Plan Equilibrado",
+    "diet1desc": "Combinaciones balanceadas de nutrientes...",
+    "diet2title": "Bajo en Carbohidratos",
+    "diet2desc": "Opciones bajas en carbohidratos...",
+    "diet3title": "Vegetariano Saludable",
+    "diet3desc": "Recetas vegetales ricas en nutrientes...",
+    "faq": [
+      {
+        "q": "¿Estos planes son seguros?",
+        "a": "Sí. Todas las guías se basan en principios nutricionales seguros y moderados. Consulta con tu médico si tienes condiciones preexistentes."
+      },
+      {
+        "q": "¿Necesito equipo especial?",
+        "a": "No, nuestras recetas y planes están diseñados para ser fáciles, con ingredientes y utensilios básicos de cocina."
+      },
+      {
+        "q": "¿Cómo recibo los productos digitales?",
+        "a": "Tras la compra recibirás un enlace de descarga instantánea y un correo con las instrucciones."
+      }
+    ]
+      },
+      "en": {
+    "logoMain": "Take care of your health",
+    "logoSub": "With Healthy Remedies",
+    "buyNow": "Buy Now",
+    "offer": "LIMITED TIME OFFER!",
+    "title": "More than 90 natural remedy recipes",
+    "subtitle": "The quick and effective guide to transform your body and health. No extreme diets and with real results.",
+    "benefitsTitle": "Why does it work?",
+    "b1t": "Fast Weight Loss",
+    "b1d": "Proven methods to burn fat from the first week",
+    "b2t": "Eating Strategies",
+    "b2d": "Simple and delicious recipes that speed up your metabolism",
+    "b3t": "No Hassle",
+    "b3d": "Clear, easy-to-follow instructions, no weird ingredients",
+    "b4t": "100% Healthy",
+    "b4d": "No pills, no extreme diets. Just real results",
+    "shakesTitle": "Natural Morning and Night Routine",
+    "shakesDesc": "Remedies work best when the body is in balance. The Natural Morning and Night Routine shows you how to prepare your body each day so natural remedies really work.",
+    "shakesPrice": "$6.00",
+    "shakesCTA": "Buy Shakes",
+    "dietsTitle": "Natural Dosage Guide",
+    "dietsDesc": "Using natural remedies without a clear dosage is one of the most common mistakes. This natural dosage guide tells you how much to take and when to maximize results.",
+    "dietsPrice": "$5.00",
+    "dietsCTA": "See Plans",
+    "offersHeading": "Special Offers",
+    "faqHeading": "Frequently Asked Questions",
+    "dietsheading": "Healthy Diets",
+    "diet1title": "Balanced Plan",
+    "diet1desc": "Balanced combinations of nutrients...",
+    "diet2title": "Low in Carbohydrates",
+    "diet2desc": "Low carbohydrate options...",
+    "diet3title": "Healthy Vegetarian",
+    "diet3desc": "Nutrient-rich plant-based recipes...",
+    "faq": [
+      {
+        "q": "Are these plans safe?",
+        "a": "Yes. All guides are based on safe and moderate nutritional principles. Check with your doctor if you have preexisting conditions."
+      },
+      {
+        "q": "Do I need special equipment?",
+        "a": "No, our recipes and plans are designed to be easy, with basic kitchen ingredients and equipment."
+      },
+      {
+        "q": "How do I receive digital products?",
+        "a": "After purchase you will receive an instant download link and an email with instructions."
+      }
+    ]
+      },
+      "pt": {
+  "logoMain": "Cuide da sua Saúde",
+  "logoSub": "Com Remédios Saudáveis",
+  "buyNow": "Comprar Agora",
+  "offer": "OFERTA POR TEMPO LIMITADO!",
+  "title": "Mais de 90 receitas de remédios naturais",
+  "subtitle": "O guia rápido e eficaz para transformar seu corpo e sua saúde. Sem dietas extremas e com resultados reais.",
+  "benefitsTitle": "Por que funciona?",
+  "b1t": "Perda Rápida",
+  "b1d": "Métodos comprovados para queimar gordura desde a primeira semana",
+  "b2t": "Estratégias alimentares",
+  "b2d": "Receitas simples e deliciosas que aceleram seu metabolismo",
+  "b3t": "Sem Complicações",
+  "b3d": "Instruções claras, fáceis de seguir, sem ingredientes estranhos",
+  "b4t": "100% Saudável",
+  "b4d": "Sem pílulas, sem dietas extremas. Apenas resultados reais",
+  "shakesTitle": "Rotina Natural de Manhã e Noite",
+  "shakesDesc": "Os remédios funcionam melhor quando o corpo está em equilíbrio. A Rotina Natural de Manhã e Noite mostra como preparar seu organismo todos os dias para que os remédios naturais realmente tragam resultados.",
+  "shakesPrice": "R$23.325,00",
+  "shakesCTA": "Comprar Batidos",
+  "dietsTitle": "Dosificador Natural",
+  "dietsDesc": "Usar remédios naturais sem uma dosagem clara é um dos erros mais comuns. Este dosificador natural indica quanto tomar e quando para maximizar os resultados.",
+  "dietsPrice": "R$19.439,00",
+  "dietsCTA": "Ver Planos",
+  "offersHeading": "Ofertas Especiais",
+  "faqHeading": "Perguntas Frequentes",
+  "dietsheading": "Dietas Saudáveis",
+  "diet1title": "Plano Equilibrado",
+  "diet1desc": "Combinações equilibradas de nutrientes...",
+  "diet2title": "Baixo em Carboidratos",
+  "diet2desc": "Opções com baixo teor de carboidratos...",
+  "diet3title": "Vegetariano Saudável",
+  "diet3desc": "Receitas vegetais ricas em nutrientes...",
+  "faq": [
+    {
+      "q": "Estes planos são seguros?",
+      "a": "Sim. Todos os guias são baseados em princípios nutricionais seguros e moderados. Consulte seu médico se tiver condições preexistentes."
+    },
+    {
+      "q": "Preciso de equipamento especial?",
+      "a": "Não, nossas receitas e planos foram desenvolvidos para serem fáceis, com ingredientes e utensílios básicos de cozinha."
+    },
+    {
+      "q": "Como recebo os produtos digitais?",
+      "a": "Após a compra, você receberá um link de download instantâneo e um e-mail com as instruções."
+    }
+  ]
+      }
+    };
+
+    // Intent: try to load external translations.json (if you keep it), otherwise use fallback
+    fetch('translations.json').then(r => {
+      if (!r.ok) throw new Error('no translations file');
+      return r.json();
+    }).then(json => {
+      translations = json;
+      initI18n();
+    }).catch(() => {
+      translations = fallbackTranslations;
+      initI18n();
+    });
+
+    function initI18n() {
+      let lang = 'es';
+      const links = { es: 'https://pay.hotmart.com/L104118897F?checkoutMode=10&bid=1769823525760', en: 'https://pay.hotmart.com/L104118897F?checkoutMode=10&bid=1769823525760', pt: 'https://pay.hotmart.com/L104118897F?checkoutMode=10&bid=1769823525760' };
+
+      function setTexts() {
+        const t = translations[lang] || {};
+        // safe updates
+        const setIf = (id, value) => {
+          const el = document.getElementById(id);
+          if (el && typeof value !== 'undefined') el.textContent = value;
+        };
+        // ...dentro de la función setTexts()...
+        setIf('diet1title', t.diet1title || '');
+        setIf('diet1desc', t.diet1desc || '');
+        setIf('diet2title', t.diet2title || '');
+        setIf('diet2desc', t.diet2desc || '');
+        setIf('diet3title', t.diet3title || '');
+        setIf('diet3desc', t.diet3desc || '');
+        // ...resto del código...
+
+        setIf('logo-main', t.logoMain || t.logo || 'Cuida tu Salud');
+        setIf('logo-sub', t.logoSub || '');
+        setIf('offer', t.offer || '');
+        setIf('title', t.title || '');
+        setIf('subtitle', t.subtitle || '');
+        setIf('buy-btn', t.buyNow || 'Comprar');
+        const base = links[lang] || links.es;
+        document.getElementById('buy-link').href = base;
+
+        setIf('benefits-title', t.benefitsTitle || '');
+        setIf('b1-title', t.b1t || ''); setIf('b1-desc', t.b1d || '');
+        setIf('b2-title', t.b2t || ''); setIf('b2-desc', t.b2d || '');
+        setIf('b3-title', t.b3t || ''); setIf('b3-desc', t.b3d || '');
+        setIf('b4-title', t.b4t || ''); setIf('b4-desc', t.b4d || '');
+
+        setIf('shakes-title', t.shakesTitle || '');
+        setIf('shakes-desc', t.shakesDesc || '');
+        setIf('shakes-price', t.shakesPrice || '');
+        const shakesCta = document.getElementById('shakes-cta');
+        if (shakesCta) shakesCta.href = base + '/batidos';
+
+        setIf('diets-title', t.dietsTitle || '');
+        setIf('diets-desc', t.dietsDesc || '');
+        setIf('diets-price', t.dietsPrice || '');
+        const dietsCta = document.getElementById('diets-cta');
+        if (dietsCta) dietsCta.href = base + '/dietas';
+
+        (t.faq || []).forEach((item, idx) => {
+          const q = document.getElementById('faq-q-' + idx);
+          const a = document.getElementById('faq-a-' + idx);
+          if (q) q.textContent = item.q || '';
+          if (a) a.textContent = item.a || '';
+        });
+
+        // update language button active state
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('btn-' + lang).classList.add('active');
+
+        // section headings
+        const offersHeading = document.getElementById('offers-heading');
+        if (offersHeading && t.offersHeading) offersHeading.textContent = t.offersHeading;
+        const faqHeading = document.getElementById('faq-heading');
+        if (faqHeading && t.faqHeading) faqHeading.textContent = t.faqHeading;
+        const dietsHeading = document.getElementById('diets-heading');
+        if (dietsHeading && t.dietsheading) dietsHeading.textContent = t.dietsheading;
+      }
+
+      // language switches
+      document.getElementById('btn-es').onclick = () => { lang = 'es'; setTexts(); };
+      document.getElementById('btn-en').onclick = () => { lang = 'en'; setTexts(); };
+      document.getElementById('btn-pt').onclick = () => { lang = 'pt'; setTexts(); };
+
+      // FAQ toggles (delegated)
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const toggle = item.querySelector('.faq-toggle');
+        const answer = item.querySelector('.faq-a');
+        if (!toggle || !answer) return;
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = !answer.hasAttribute('hidden');
+          // close all
+          document.querySelectorAll('.faq-a').forEach(a => a.setAttribute('hidden', ''));
+          document.querySelectorAll('.faq-toggle').forEach(t => t.textContent = '+');
+          document.querySelectorAll('.faq-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
+          if (!isOpen) {
+            answer.removeAttribute('hidden');
+            toggle.textContent = '−';
+            toggle.setAttribute('aria-expanded', 'true');
+          } else {
+            answer.setAttribute('hidden', '');
+            toggle.textContent = '+';
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      // initial render
+      setTexts();
+    }
+
+  </script>
+</body>
+</html>
